@@ -1,0 +1,69 @@
+body {
+	background: url("https://s-media-cache-ak0.pinimg.com/originals/2c/d1/7d/2cd17d7e2b3c31c43b6907078f4bc0d9.jpg");
+	background-size: auto;
+	background-position: center;
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 60px;	
+	text-align: center;
+	color: white;
+}
+
+p {
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	color: white;
+	padding-left: 10px;
+}
+
+small {font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	color: white;
+	padding-left: 10px;
+}
+
+h6 {
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+	color: white;
+}
+
+#mynavbar {
+	text-align: center;
+}
+
+.first {
+	background-image: url(https://kudago.com/media/images/event/ea/0c/ea0c0673318f95eeaca734cad2e35f7f.jpg);
+	height: 250px;
+	border: 4px solid white;
+}
+
+.second {
+	background-image: url(http://imgs.inkfrog.com/pix/favordigital/CLD03.jpg);
+	height: 250px;
+	border: 4px solid white;
+}
+
+.third {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/M82_HST_ACS_2006-14-a-large_web.jpg/1280px-M82_HST_ACS_2006-14-a-large_web.jpg);
+	height: 250px;
+	border: 4px solid white;
+}
+
+.fourth {
+	background-image: url(http://assets.nydailynews.com/polopoly_fs/1.2482377.1451626826!/img/httpImage/image.jpg_gen/derivatives/article_750/new-years-eve-times-square.jpg);
+	height: 250px;
+	border: 4px solid white;
+}
+
+.col-sm-6 {
+	padding: 10px 10px 10px 10px;
+}
+
+.container-fluid {
+	padding: 0;
+}
+

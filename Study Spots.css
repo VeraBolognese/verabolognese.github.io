@@ -1,0 +1,52 @@
+#map {
+  	width: 100%;
+    height: 400px;
+    background-color: grey;
+    border: 4px solid white;
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 60px;
+	padding: 0 0 30px 0;
+	color: #FFFFFF;
+}
+
+body {
+  text-align: center;
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/2c/d1/7d/2cd17d7e2b3c31c43b6907078f4bc0d9.jpg");
+  background-size: auto;
+  background-position: center;
+}
+
+
+p {
+	font-family: 'Indie Flower', cursive;
+	font-size: 17px;
+  font-weight: bold;
+    }
+
+small {
+  font-family: 'Indie Flower', cursive;
+  font-size: 13px;
+}
+
+img {
+  max-width: 150px;
+}
+
+ .container-fluid {
+	padding: 0;
+}
+
+h6 {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  color: white;
+} 
+
+#cat {
+  max-width: 100px;
+}
+

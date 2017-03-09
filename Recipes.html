@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Recipes.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Navbar set up -->
+			<nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="mynavbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Sounds.html">Sounds</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="Study Spots.html">Study Spots</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+
+			        
+		<h1> Recipes </h1>
+		<div class="container-fluid">
+			<div class="first show-description1">
+				<p><b>Pizza Margherita</b><br />
+				<small><b>Ingredients</b><br />
+				Olive oil (for the tray), 200g plain flour, 7g packet easy-blend dried yeast, 1 tsp sugar, 125ml warm water, 85ml passata, 100g mozzarella (half grated, half chopped), 2 tbsp grated Parmesan or vegetarian alternative, small bunch basil (half chopped, half left whole), side salad to serve.<br />
+				<b>Method</b><br />
+				Heat oven to 240C/220C fan/gas 9. Oil a 20 x 24cm baking tray. Mix the flour, yeast, ¼ tsp salt and the sugar in a bowl, then stir in the water. Bring the mixture together, knead until smooth, then press into the oiled tray.<br />
+				Spread passata over the dough, leaving a thin border round the edge. Season the passata, then sprinkle with the chopped basil, the mozzarella and the Parmesan, and bake for 15-20 mins or until cooked through. Scatter with the remaining basil and serve with a side salad.</small>
+				</p>
+			</div>
+			<div class="second show-description2">
+				<p><b>Saffron Risotto</b><br />
+				<small><b>Ingredients</b><br />
+				1 litre chicken or vegetable stock, 1 tsp saffron threads, 50g butter, plus 15g extra, 1 tbsp light olive oil, 50g shallots, finely chopped, 250g risotto rice, 125ml dry marsala wine, 4 tbsps grated Parmesan cheese, plus extra to serve, Salt and pepper, to taste.<br />
+				<b>Method</b><br />
+				Heat the stock in a saucepan, add the saffron threads and put over the lowest heat just to keep it warm. Melt the 50g of butter and 1 tbsp of oil in a wide, shallow, heavy-based saucepan over a low to medium heat, add the chopped shallots and cook for a couple of minutes or so, stirring frequently with a wooden spoon, until softened. Add the risotto rice and keep stirring for a minute or so, then turn up the heat and add the marsala wine, which will bubble up excitedly. Keep stirring until it is absorbed.
+				<br />
+				Start ladling in the hot, golden, saffron-infused stock, allowing each ladleful to absorb as you stir before even thinking of adding the next. Stir and ladle the stock into the rice until it is cooked but still has a slight bite to it. This should take about 18 minutes, maybe a little less – by which time you should have finished all your stock. However, if you find the rice is cooked to the texture you like before the stock’s run out, don’t feel the need to use all the liquid. Turn off the heat, stirring still, and beat in the remaining tablespoon of butter and the grated Parmesan, then season to taste. Serve immediately, spooning the mixture into warmed bowls, with grated Parmesan.</small>
+				</p>
+			</div>	
+		</div>
+			
+		<h6> © 2017 Chilled Student Guide</h6>
+
+		<script>
+		$('.first').on('click', function() {
+    	$(this).toggleClass('show-description1');
+    	});
+    	$('.second').on('click', function() {
+    	$(this).toggleClass('show-description2');
+ 		});
+		</script>
+
+	</body>
+</html>
