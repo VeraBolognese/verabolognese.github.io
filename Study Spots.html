@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Study Spots.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- Navbar set up -->
+			<nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="mynavbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Sounds.html">Sounds</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="Study Spots.html">Study Spots</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+
+
+			<div class="container">
+			<h1> Study Spots </h1>
+			<div id="map"></div>
+
+			<script>
+      			function initMap() {
+        		var BL = {lat: 51.529, lng: -0.130};
+        		var map = new google.maps.Map(document.getElementById('map'), {
+          		zoom: 12,
+          		center: BL
+        		});
+
+        		var marker1 = new google.maps.Marker({
+          		position: {lat: 51.497, lng: -0.172},
+          		map: map,
+          		title: 'GardenCafe'
+          		});
+          		var content1 = "<p> Victoria and Albert Museum Cafe </p>" +
+          						"<div class='container-fluid'>" +
+          							"<img width='180' src='https://vanda-production-assets.s3.amazonaws.com/2016/04/01/12/32/00/adc8cc7c-2f19-499d-a3c4-12db3cdbad87/visit-hero.jpg'><br />" +
+          							"<small> Enjoy the beautiful location with its lavish gallery cafe with classic menu, mosaics, stained glass and occasional piano or harp music. And do not forget to check out the garden if the sun is out. </small>"
+          		var infowindow1 = new google.maps.InfoWindow({
+    			     content: content1,
+    			     maxWidth: 200
+ 			 	      });
+          		google.maps.event.addListener(marker1, 'click', function() {
+    			   infowindow1.open(map,marker1);
+    			   })
+
+
+        		var marker2 = new google.maps.Marker({
+          		position: {lat: 51.508, lng: -0.168},
+          		map: map,
+          		title: 'HydePark'
+        		});
+        		var content2 = "<p> Hyde Park </p>" +
+        						"<div class='container-fluid'>" +
+        							"<img height='120' src='http://www.hyde-park-executive-apartments.com/upload/slide_images/attractions-01.jpg'><br />" +
+        							"<small> Nothing better than some fresh air to awake the brain and put you in the mood for studying. Come to the most famous park in the world (sorry Central Park) and concert venue to enjoy the british sun. Do check the weather forcast before though! </small>"
+          		var infowindow2 = new google.maps.InfoWindow({
+    			     content: content2,
+    			     maxWidth: 200
+ 			 	      });
+ 			 	      google.maps.event.addListener(marker2, 'click', function() {
+    			     infowindow2.open(map,marker2);
+    			     })
+
+
+        		var marker3 = new google.maps.Marker({
+          		position: {lat: 51.507, lng: -0.115},
+          		map: map,
+          		title: 'Southbank'
+        		});
+        		var content3 = "<p> Southbank Centre <p>" +
+        						"<div class='container-fluid'>" +
+        							"<img height='120' src='http://www.event1001.com/objectimages/24179/venue_search_venue_finder_exhibition_centres_southbank_centre_1025285996.jpg'></br />" +
+        							"<small> The perfect place to study and still be surrounded by cultural events. Over two thousand paid performances of music, dance and literature are staged at Southbank Centre each year, as well as over two thousand free events and an education programme, in and around the performing arts venues. </small>" +
+        						"</div>";
+          		var infowindow3 = new google.maps.InfoWindow({
+    			     content: content3,
+    			     maxWidth: 200
+ 			 	      });
+ 			 	      google.maps.event.addListener(marker3, 'click', function() {
+    			     infowindow3.open(map,marker3);
+    			     })
+
+
+        		var marker4 = new google.maps.Marker({
+          		position: {lat: 51.525, lng: -0.070},
+          		map: map,
+          		title: 'CatCafe'
+        		});
+  			   	var content4 = "<p> Lady Dinah's Cat Emporium </p>" +
+  								"<div class='container-fluid'>" + 
+  									"<img height='120' src='http://img.static-bookatable.com/lady-dinahs-cat-emporium-shoreditch-london-2.jpg?id=b79f8b74004d5e4264cb5d4809eea52b.jpg&width=600&height=400&scale=both&mode=crop&404=bat2/404-restaurant.jpg&quality=90' style='float:left'><br />" +
+  									"<small> Come to the cat cafe to relax and study while petting the lovely furry hosts.There are 13 cats mooching about, providing the backdrop to light meals, sandwiches, salads and bagels filled with things like houmous, tomato and cucumber, egg and cress or honey-mustard chicken and rocket. High teas and afternoon teas are also available, alongside a range of interesting pots of tea – think chantilly cream tea, or popcorn green tea. </small>" +
+  								"</div>" ;
+          		var infowindow4 = new google.maps.InfoWindow({
+    			     content: content4,
+    			     maxWidth: 200
+ 			 	      });
+ 			 	      google.maps.event.addListener(marker4, 'click', function() {
+    			     infowindow4.open(map,marker4);
+    			     })
+
+
+          		google.maps.event.addListener(map, 'click', function() {
+    			     infowindow1.close();
+  				    });
+
+  				    google.maps.event.addListener(map, 'click', function() {
+    			     infowindow2.close();
+ 		 		      });
+
+ 		 		      google.maps.event.addListener(map, 'click', function() {
+    			     infowindow3.close();
+ 		 		      });
+
+ 		 		      google.maps.event.addListener(map, 'click', function() {
+    			     infowindow4.close();
+ 		 		      });
+
+        		}
+    		</script>
+    		<script async defer
+    			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfw-GdkiSIw4OcLKR2z-Pv0bYRNDvh8bc&callback=initMap">
+    		</script>
+    		</div>
+				<h6> © 2017 Chilled Student Guide</h6>
+	</body>
+</html>

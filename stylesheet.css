@@ -1,0 +1,33 @@
+.container-fluid {
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 60px;
+	padding: 50px 0 0 0;
+	color: #FFFFFF;
+}
+
+h3 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 40px;
+	padding: 20px 0 0 0;
+	color: #FFFFFF;
+}
+body {
+  text-align: center;
+  background: url("http://cdn.pcwallart.com/images/starfish-on-beach-story-wallpaper-1.jpg");
+  background-size: auto;
+  background-position: center;
+
+}
+
+h6 {
+text-align: center;
+padding: 270px 0 0 0;
+color: black;
+font-family: 'Indie Flower', cursive;
+font-size: 15px;
+font-weight: bold;
+}

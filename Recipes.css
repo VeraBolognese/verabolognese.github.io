@@ -1,0 +1,91 @@
+h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 60px;	
+	text-align: center;
+	color: white;
+}
+
+body {
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/2c/d1/7d/2cd17d7e2b3c31c43b6907078f4bc0d9.jpg");
+  background-size: auto;
+}
+
+h6 {
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+	color: white;
+}
+
+p {
+	font-size: 22px;
+	color: white;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+  	bottom: 0;
+  	margin-bottom: 0;
+  	height: 40px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	text-align: justify;
+}
+
+small {
+	font-size: 18px;
+	color: white;
+	opacity: 0;
+}
+
+#mynavbar {
+	text-align: center;
+}
+
+.show-description1 p {
+	height: 280px;
+}
+
+.show-description1 small {
+	opacity: 1;
+}
+
+.show-description2 p {
+	height: 410px;
+}
+
+.show-description2 small{
+	opacity: 1;
+}
+
+.first {
+  background: url("http://italianfoodinthevalley.com/wp-content/uploads/2017/01/a259e0bfe5dfcd037af0a1d22214f1a6.jpg");
+  height: 550px;
+  background-size: cover;
+  border: 4px solid white;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+}
+
+.second {
+	background: url(http://www.four-magazine.com/files/images/articles/2772/1250x1250/risotto01%20Kopie.jpg);
+  height: 550px;
+  background-size: cover;
+  border: 4px solid white;
+  font-family: 'Indie Flower', cursive;
+  position: relative;
+  margin: 40px 0 0 0;
+}
+
+@media (max-width: 500px) {
+	.first {
+		height: 1000px;
+	}
+	.show-description1 p {
+		height: 900px;
+	}
+	.second {
+		height: 1600px;
+	}
+	.show-description2 p {
+	height: 1500px;
+	}
+}
